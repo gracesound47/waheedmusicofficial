@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Grace Sound</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+          }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h2 class="logo">Grace Sound</h2>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="#home" class="sidebar-link" data-page="home">Home</a></li>
+                    <li><a href="#about" class="sidebar-link" data-page="about">About</a></li>
+                    <li><a href="#information" class="sidebar-link" data-page="information">Information</a></li>
+                    <li><a href="#login" class="sidebar-link" id="openLogin">Login</a></li>
+                    <li><a href="#logout" class="sidebar-link" id="openLogout">Logout</a></li>
+                    <li><a href="#create-account" class="sidebar-link" id="openCreateAccount">Create New Account</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <div class="main-area">
+            <header class="top-menu">
+                <div class="top-nav">
+                    <a href="#music" class="top-link">Music</a>
+                    <a href="#videos" class="top-link">Videos</a>
+                    <a href="#most-searched" class="top-link">Most Searched</a>
+                    <a href="#popular-videos" class="top-link">Popular Videos</a>
+                    <a href="#aboutus" class="top-link">About Us</a>
+                    <a href="#faq" class="top-link">FAQ</a>
+                    <a href="#privacy" class="top-link">Privacy</a>
+                    <a href="#terms" class="top-link">Terms</a>
+                    <a href="#contact" class="top-link">Contact</a>
+                    <a href="#blog" class="top-link">Blog</a>
+                    <a href="#moods-genres" class="top-link">Moods & Genres</a>
+                    
+                    
+                </div>
+                <img src="Icons/Logo_icon1.png" alt="Grace Sound Logo" class="header-logo" />
+            </header>
+
+            <main>
+                <section id="home" class="page-section">
+                    <h1>Welcome to Grace Sound</h1>
+                    <p>Upload, listen, and download your favorite songs and videos seamlessly.</p>
+                    <div class="suggestions">
+                        <h2>Suggested Music Artists</h2>
+                        <ul>
+                            <li><a href="https://www.youtube.com/watch?v=YQHsXMglC9A" target="_blank" rel="noopener">Adele</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=fLexgOxsZu0" target="_blank" rel="noopener">Bruno Mars</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=3KR8_igDs1Y" target="_blank" rel="noopener">Dua Lipa</a></li>
+                        </ul>
+                        <h2>Suggested African Artists</h2>
+                        <ul>
+                            <li><a href="https://www.youtube.com/channel/UCfacegrace78" target="_blank" rel="noopener">Burna Boy - Grace Channel</a></li>
+                            <li><a href="https://www.youtube.com/channel/UCgracesound47" target="_blank" rel="noopener">Wizkid - Grace Sound Channel</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=4V1g1g1g1g1" target="_blank" rel="noopener">Davido</a></li>
+                        </ul>
+                        <h2>Suggested Videos</h2>
+                        <ul>
+                            <li><a href="https://www.youtube.com/watch?v=kXYiU_JCYtU" target="_blank" rel="noopener">Linkin Park - Numb</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=CevxZvSJLk8" target="_blank" rel="noopener">Katy Perry - Roar</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener">Rick Astley - Never Gonna Give You Up</a></li>
+                        </ul>
+                        <h2>South Sudan Artists</h2>
+                        <ul>
+                            <li><a href="https://audiomack.com/pro-tony-beatz/song/she-tony-beatz" target="_blank" rel="noopner">pro-tony-beatz</a></li>
+                            <li><a href="https://youtu.be/aHwfKZyScrY?si=3hNN__1AbSzCDhRH" target="_blank" rel="noopener">Alijoma</a></li>
+                            <li><a href="https://youtu.be/Df8_byFg1yE?si=QEwZbJSAu6kN3lbE" target="_blank" rel="noopener">Afrimo</a></li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="about" class="page-section hidden about-section">
+                    <img src="Images/img.1.png" alt="About Photo Left" class="about-photo left" />
+                    <div class="about-text">
+                        <h2>About</h2>
+                        <p>This is Grace Sound - your go-to music platform.</p>
+                        <p>Contact email: <a href="mailto:Alphastudios83@gmail.com">GraceSound@gmail.com</a></p>
+                    </div>
+                    <img src="Images/img.1.png" alt="About Photo Right" class="about-photo right" />
+                </section>
+
+                <section id="information" class="page-section hidden information-section">
+                    <img src="Images/img.1.png" alt="Information Photo Left" class="info-photo left" />
+                    <div class="info-text">
+                        <h2>Information</h2>
+                        <p>Details about the platform features and usage.</p>
+                        <p>For support, reach us anytime!</p>
+                    </div>
+                    <img src="Images/img.1.png" alt="Information Photo Right" class="img " />
+                </section>
+
+                <section id="logout" class="page-section hidden logout-confirmation modal-galaxy centered-box">
+                    <h2>Confirm Logout</h2>
+                    <p>Are you sure you want to log out?</p>
+                    <div class="logout-buttons">
+                        <button id="confirmLogout" class="animated-btn">Yes, Log out</button>
+                        <button id="cancelLogout" class="animated-btn">Cancel</button>
+                    </div>
+                </section>
+
+                <section id="music" class="page-section hidden">
+                    <h2>Music</h2>
+                    <p>Listen and download your music below.</p>
+                    <input type="file" id="musicUpload" accept="audio/*" multiple />
+                    <div class="media-list" id="musicList">
+                       
+                        <div class="media-item">
+                            <img src="icons/Logo_icon1.png" alt="Sample Song 1" class="media-image" />
+                            <p>Sample Song 1</p>
+                            <audio id="audio1" src="Music/Tony Beatz.mp3"></audio>
+                            <button class="play-btn" data-target="audio1" aria-label="Play song 1"></button>
+                            <a href="sample-song-1.mp3" download class="download-btn" aria-label="Download song 1">Download</a>
+                        </div>
+                    </div>
+                </section>
+
+               <section>
+                 <h1>Music</h1>
+                 <p>Download Song</p>
+                 <input type="file" id="Music download" accept="audio/*" multiple />
+                 <div class="media-list" id="musiclist">
+
+                     <div class="media-item">
+                        <img src="Icons/Logo_icon1.png " alt="enjoy" class="media-image" />
+                        <p>African Dance</p>
+                        <audio id="audio2" src="Music/African Dance-Tont Beatz (1).mp3"></audio>
+                        <button class="play-btn" data-target="audio2" aria-label="Play song "></button>
+                            <a href="Music/African Dance-Tont Beatz (1).mp3" download class="download-btn" aria-label="Download ">Download</a>
+                     </div>
+                 </div>
+               </section>
+
+               <section>
+                <h1>Music</h1>
+                <p>Download Song</p>
+                <input type="file" id="Music download" accept="audio/*" multiple />
+                <div class="media-list" id="musiclist">
+
+                    <div class="media-item">
+                       <img src="Icons/Logo_icon1.png " alt="enjoy" class="media-image" />
+                       <p>Ana_mugirim</p>
+                       <audio id="audio3" src="music/Ana_mugirim-TonyBeatz(Official_Audio)@tonybeatz8208.mp3 "></audio>
+                       <button class="play-btn" data-target="audio3" aria-label="Play song "></button>
+                           <a href="Ana_mugirim" download class="download-btn" aria-label="Download ">Download</a>
+                    </div>
+                </div>
+              </section>
+              
+              <section>
+                <h1>Music</h1>
+                <p>Download Song</p>
+                <input type="file" id="Music download" accept="audio/*" multiple />
+                <div class="media-list" id="musiclist">
+
+                    <div class="media-item">
+                       <img src="Icons/Logo_icon1.png " alt="enjoy" class="media-image" />
+                       <p>I don't know what to do</p>
+                       <audio id="audio4" src="music/I don't know what to do.mp3 "></audio>
+                       <button class="play-btn" data-target="audio4" aria-label="Play song "></button>
+                           <a href="Ana_mugirim" download class="download-btn" aria-label="Download ">Download</a>
+                    </div>
+                </div>
+              </section>
+
+              <section>
+                <h1>Music</h1>
+                <p>Download Song</p>
+                <input type="file" id="Music download" accept="audio/*" multiple />
+                <div class="media-list" id="musiclist">
+
+                    <div class="media-item">
+                       <img src="Icons/Logo_icon1.png " alt="enjoy" class="media-image" />
+                       <p>its_your_wedding</p>
+                       <audio id="audio5" src="music/It's your Wedding-miss-Mim_TonyBeatz(Official-Audio).mp3 "></audio>
+                       <button class="play-btn" data-target="audio5" aria-label="Play song "></button>
+                           <a href="its_your_wedding" download class="download-btn" aria-label="Download ">Download</a>
+                    </div>
+                </div>
+              </section>
+
+              <section>
+                <h1>Music</h1>
+                <p>Download Song</p>
+                <input type="file" id="Music download" accept="audio/*" multiple />
+                <div class="media-list" id="musiclist">
+
+                    <div class="media-item">
+                       <img src="Icons/Logo_icon1.png " alt="enjoy" class="media-image" />
+                       <p>Lakin_le_shunu</p>
+                       <audio id="audio6" src="music/Lakin le shunu BY Pro Tony.mp3 "></audio>
+                       <button class="play-btn" data-target="audio6" aria-label="Play song "></button>
+                           <a href="Lakin_le_shunu" download class="download-btn" aria-label="Download ">Download</a>
+                    </div>
+                </div>
+              </section>
+
+              <section>
+                <h1>Music</h1>
+                <p>Download Song</p>
+                <input type="file" id="Music download" accept="audio/*" multiple />
+                <div class="media-list" id="musiclist">
+
+                    <div class="media-item">
+                       <img src="Icons/Logo_icon1.png " alt="enjoy" class="media-image" />
+                       <p>Ma bestie</p>
+                       <audio id="audio7" src="Music/Ma Bestie-TonyBeatz-(Official-Audio).mp3"></audio>
+                       <button class="play-btn" data-target="audio7" aria-label="Play song "></button>
+                           <a href="M bestie" download class="download-btn" aria-label="Download ">Download</a>
+                    </div>
+                </div>
+              </section>
+
+              <section>
+                <h1>Music</h1>
+                <p>Download Song</p>
+                <input type="file" id="Music download" accept="audio/*" multiple />
+                <div class="media-list" id="musiclist">
+
+                    <div class="media-item">
+                       <img src="Icons/Logo_icon1.png " alt="enjoy" class="media-image" />
+                       <p>Mama</p>
+                       <audio id="audio8" src="music/Mama-Pro Tony.mp3 "></audio>
+                       <button class="play-btn" data-target="audio8" aria-label="Play song "></button>
+                           <a href="Mama" download class="download-btn" aria-label="Download ">Download</a>
+                    </div>
+                </div>
+              </section>
+
+
+
+                <section id="videos" class="page-section hidden">
+                    <h2>Videos</h2>
+                    <p>Watch and download videos below.</p>
+                    <input type="file" id="videoUpload" accept="video/*" multiple />
+                    <div class="media-list" id="videoList">
+                        
+                        <div class="media-item">
+                            <img src="sample-video1.jpg" alt="Sample Video 1" class="media-image" />
+                            <p>Sample Video 1</p>
+                            <video id="video1" width="320" height="180" src="sample-video-1.mp4" preload="metadata"></video>
+                            <button class="play-btn" data-target="video1" aria-label="Play video 1"></button>
+                            <a href="sample-video-1.mp4" download class="download-btn" aria-label="Download video 1">Download</a>
+                        </div>
+                    </div>
+                </section>
+
+                
+                <section id="moods-genres" class="page-section hidden">
+                    <h2>Moods & Genres</h2>
+                    <ul class="genres-list">
+                        <li>Pop</li>
+                        <li>Rock</li>
+                        <li>Hip Hop</li>
+                        <li>Jazz</li>
+                        <li>Classical</li>
+                        <li>Country</li>
+                        <li>Electronic</li>
+                        <li>R&B</li>
+                        <li>Reggae</li>
+                        <li>Local South African</li>
+                    </ul>
+                </section>
+
+                
+                <section id="popular-videos" class="page-section hidden">
+                    <h2>Popular Videos</h2>
+                    <div class="media-list">
+                        <div class="media-item">
+                            <img src="popular-video1.jpg" alt="Popular Video 1" class="media-image" />
+                            <p>Popular Video 1</p>
+                            <video width="320" height="180" src="popular-video1.mp4" controls></video>
+                        </div>
+                        <div class="media-item">
+                            <img src="popular-video2.jpg" alt="Popular Video 2" class="media-image" />
+                            <p>Popular Video 2</p>
+                            <video width="320" height="180" src="popular-video2.mp4" controls></video>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- New section: Most Searched -->
+                <section id="most-searched" class="page-section hidden most-searched-section">
+                    <h2>Most Searched</h2>
+                    <p>GraceSound - Only Destination for Free Music and Video Downloads</p>
+                    <p>GraceSound has emerged as a leading platform for free music and video downloads, offering a vast library of content with a user-friendly interface. Users can easily find and download high-quality MP3 and MP4 files, benefiting from an ad-free experience and fast download speeds. GraceSound supports multiple formats and devices, ensuring compatibility and convenience. The platform's commitment to high-quality downloads and regular content updates keeps users engaged with the latest music and videos. GraceSound's extensive genre diversity, including global hits and unique local South African music, makes it a preferred choice for many, as reflected in numerous positive user reviews and ratings.</p>
+                    <p>Check out the top searches and top videos on GraceSound. You can also view the videos you recently watched.</p>
+                </section>
+
+                <section id="aboutus" class="page-section hidden">
+                    <h2>About Us</h2>
+                    <p><strong>What is GraceSound?</strong> About Us</p>
+                    <p><strong>GraceSound’s Extensive Media Library</strong><br/>
+                    One of the standout features of GraceSound is its vast media library. With thousands of songs and videos spanning multiple genres and formats, users will always find what they’re looking for. GraceSound’s library is continuously updated, so you can always access the latest content, whether it's the newest releases for mp3 download songs 2024 or upcoming hits for mp3 download songs 2025. This expansive collection makes GraceSound a preferred destination for those who want a reliable source for both music and video downloads.</p>
+                    <p><strong>Supported Audio Formats</strong><br/>
+                    GraceSound supports a variety of audio formats, ensuring that your downloads are compatible with a wide range of devices. Whether you're looking for standard MP3 files for everyday listening or higher-quality formats for a premium audio experience, GraceSound has options to suit your needs. The platform’s ability to provide diverse audio formats allows users to enjoy their music anytime, anywhere, without compatibility issues.</p>
+                    <p><strong>Video Resolution Options</strong><br/>
+                    When it comes to video downloads, GraceSound offers multiple resolution options to cater to different needs and device capabilities. Whether you prefer HD quality for a richer viewing experience or lower resolutions for quicker downloads, you can choose the option that best fits your requirements. GraceSound’s flexibility in video resolution ensures that your downloads are optimized for both performance and storage space, making it easier to enjoy your content on any device.</p>
+                    <p><strong>Popular Genres on GraceSound</strong><br/>
+                    GraceSound’s extensive library includes a wide variety of music genres, ensuring that all users find something to enjoy. From pop and rock to classical, jazz, and hip-hop, GraceSound covers all major music genres. This variety allows users to explore new musical territories or stick to their favorite styles, making every visit to GraceSound a chance to discover something new. Additionally, GraceSound makes it easy to access trending songs, so you’re always in the loop with the latest music.</p>
+                    <p><strong>The Evolution of GraceSound in Digital Media</strong><br/>
+                    Since its launch, GraceSound has grown into a trusted name in digital media downloads. The platform has continually adapted to new technologies and changing user needs, all while maintaining its core promise of delivering free, high-quality content. GraceSound’s journey reflects the evolution of digital media itself, where user convenience, quality, and variety are key. Today, GraceSound stands out as a reliable source for music and video downloads, combining ease of use with a vast and diverse media library.</p>
+                    <p><strong>How to Download Music and Videos on GraceSound</strong><br/>
+                    Downloading music and videos from GraceSound is a straightforward process, designed to be user-friendly for all. The platform’s intuitive interface makes it easy to search for, select, and download your desired media. Whether you're looking for the latest mp3 download new songs or classic tracks, GraceSound provides a seamless experience. Simply follow a few easy steps, and you’ll have your favorite tracks and videos ready to enjoy offline in no time.</p>
+                    <p><strong>Easy Steps for MP3 Downloads</strong><br/>
+                    Getting MP3 downloads from GraceSound is as simple as it gets. Just search for the song you want, select the format that suits your needs, and hit the download button. Within seconds, your chosen music will be ready to enjoy on any device. GraceSound ensures that the process is hassle-free, so you can spend more time listening to music and less time waiting for downloads.</p>
+                    <p><strong>Quick Guide to MP4 Downloads</strong><br/>
+                    If you’re more into videos, GraceSound has you covered with easy MP4 downloads. Choose the video you want, pick the resolution that fits your device or storage capacity, and start downloading. It’s that simple! GraceSound’s streamlined process means you can quickly add your favorite videos to your collection without any complicated steps.</p>
+                    <p><strong>Tips for Efficient Downloads</strong><br/>
+                    To make your GraceSound experience even better, here are some tips for efficient downloads: Always check your storage space before downloading, choose the appropriate format and resolution based on your device, and ensure you have a stable internet connection to avoid interruptions. By following these tips, you’ll be able to enjoy seamless downloads and make the most out of what GraceSound offers.</p>
+                    <p><strong>Exploring GraceSound MP3 Download Options</strong><br/>
+                    GraceSound offers a range of MP3 download options, allowing you to choose the quality and format that best fits your needs. Whether you're looking for quick downloads or high-quality audio, GraceSound provides the flexibility to accommodate different preferences. This makes GraceSound an ideal platform for users who want a personalized music experience tailored to their specific needs.</p>
+                    <p><strong>User Experience and Interface Design on GraceSound</strong><br/>
+                    GraceSound’s user-friendly interface ensures a seamless experience for users of all ages. The platform is designed with simplicity in mind, offering clear categories and a responsive design that works well on both desktop and mobile devices. Whether you’re tech-savvy or a casual user, GraceSound makes it easy to navigate and find exactly what you’re looking for, enhancing the overall user experience.</p>
+                    <p><strong>The Benefits of Using GraceSound</strong><br/>
+                    There are plenty of reasons to choose GraceSound for your media needs. From its extensive library to its user-friendly design, GraceSound offers a reliable and enjoyable experience for downloading music and videos. Whether you’re searching for the latest hits or discovering new content, GraceSound makes it easy to find and download what you love, all at no cost.</p>
+                    <p><strong>Free and Unlimited Downloads</strong><br/>
+                    One of the biggest benefits of GraceSound is that it’s completely free. There are no hidden fees or subscription costs—just unlimited downloads of your favorite music and videos. Whether you’re downloading a few songs or building a large collection, GraceSound provides access to a vast amount of content without any limitations. This makes it a perfect choice for users who want to enjoy their media without worrying about costs.</p>
+                    <p><strong>High-Quality Audio and Video</strong><br/>
+                    Despite being free, GraceSound doesn’t compromise on quality. The platform offers high-quality audio and video downloads, ensuring that you get the best possible experience every time. Whether you’re listening to your favorite music or watching a video, GraceSound delivers crystal clear sound and sharp visuals, making it a top choice for users who value quality.</p>
+                    <p><strong>Compatibility Across Devices</strong><br/>
+                    GraceSound’s downloads are compatible with a wide range of devices, from smartphones to tablets to PCs. No matter where you want to listen or watch, GraceSound makes it easy. Whether you’re on the go with your smartphone or relaxing at home with your computer, GraceSound ensures that your media is accessible and ready to enjoy on any device.</p>
+                    <p><strong>Maximizing GraceSound Music Downloads</strong><br/>
+                    To get the most out of your GraceSound music downloads, consider creating playlists, exploring new genres, and regularly updating your library with the latest releases. GraceSound offers tools and features that make it easy to organize your music, so you can enjoy a customized listening experience that suits your mood and preferences.</p>
+                    <p><strong>Discovering New Music and Videos on GraceSound</strong><br/>
+                    GraceSound is more than just a download platform—it’s a place to discover new music and videos. Use the search function, browse popular categories, and find your next favorite song or video. Whether you’re looking for the latest trending tracks or hidden gems, GraceSound makes discovery effortless and enjoyable.</p>
+                    <p><strong>GraceSound’s Mobile Application and Features</strong><br/>
+                    GraceSound’s mobile app takes your media experience to the next level. With its easy-to-use features and offline capabilities, you can enjoy your downloads anytime, anywhere. The app is designed for seamless use on mobile devices, offering quick access to your media library and the ability to download new content on the go. This makes GraceSound’s mobile app a must-have for users who want their media available at all times.</p>
+                    <p><strong>Download and Install Guide</strong><br/>
+                    Getting started with the GraceSound mobile app is simple. Download the app from your preferred app store, follow the installation steps, and you’re ready to go. The app is lightweight and quick to set up, ensuring that you can start enjoying your favorite media in no time. With just a few taps, you’ll have access to all of GraceSound’s features directly from your mobile device.</p>
+                    <p><strong>Mobile-Specific Features</strong><br/>
+                    The GraceSound mobile app offers features tailored for on-the-go use, including easy access to downloads, customizable playlists, and quick search options. Whether you’re commuting, traveling, or just relaxing at home, the GraceSound app makes it easy to enjoy your media wherever you are. Its mobile-specific features are designed to enhance your experience, making GraceSound a versatile tool for all your music and video needs.</p>
+                    <p><strong>Safety and Legal Aspects of Using GraceSound</strong><br/>
+                    GraceSound takes safety seriously. The platform is committed to providing a secure environment for users, with regular updates to ensure compliance with legal standards. By using GraceSound, you can enjoy your downloads with peace of mind, knowing that your data and devices are protected. GraceSound also ensures that all content is legally obtained, providing a trustworthy source for your media needs.</p>
+                    <p><strong>How GraceSound Keeps Your Downloads Safe and Secure</strong><br/>
+                    When you download from GraceSound, you can trust that your files are safe. GraceSound uses encryption and other security measures to protect your downloads from viruses and malware. This attention to security means that you can download with confidence, knowing that your content is free from harmful software. GraceSound’s commitment to safety ensures that your media experience is not only enjoyable but also secure.</p>
+                    <p><strong>Using GraceSound to Create Playlists for Any Mood</strong><br/>
+                    With GraceSound, you can easily create playlists for any occasion. Whether you’re in the mood for upbeat tracks or relaxing melodies, GraceSound makes it easy to curate the perfect mix. The platform’s playlist features allow you to organize your music by genre, mood, or event, making your listening experience personalized and enjoyable. Creating playlists on GraceSound is a great way to enhance your music collection and make every moment special.</p>
+                    <p><strong>Best Ways to Use GraceSound on Low-Storage Devices</strong><br/>
+                    If you’re low on storage, GraceSound offers several ways to manage your downloads efficiently. Choose lower-resolution videos, compress audio files, and keep only your favorite tracks to save space. GraceSound’s flexible download options make it possible to enjoy a rich media experience even on devices with limited storage. This ensures that you can still access and enjoy all the content you love without worrying about running out of space.</p>
+                    <p><strong>How GraceSound Supports Various Languages and Regions</strong><br/>
+                    GraceSound is a global platform that supports multiple languages and regions. No matter where you are, GraceSound ensures that you have access to content in your preferred language. The platform’s multilingual support makes it accessible to users around the world, providing a diverse range of content that caters to different cultures and tastes. Whether you’re searching for music in your native language or exploring new content from other regions, GraceSound makes it easy to find what you’re looking for.</p>
+                </section>
+
+                <section id="faq" class="page-section hidden">
+                    <h2>FAQ</h2>
+                    <div id="faq-content">
+                        <p>Ask your question below and get instant answers.</p>
+                        <input type="text" id="faqQuestion" placeholder="Type your question here..." />
+                        <button id="faqAskBtn" class="animated-btn">Ask</button>
+                        <p id="faqAnswer" aria-live="polite"></p>
+                    </div>
+                </section>
+
+                <section id="privacy" class="page-section hidden">
+                    <h2>Privacy Policy</h2>
+                    <p>Your privacy matters. Your data is confidential and never shared. Only you can see your account and content.</p>
+                </section>
+
+                <section id="terms" class="page-section hidden">
+                    <h2>Terms and Conditions</h2>
+                    <p>By using this site, you agree to our policies. Any misuse or wrongful act will hold you responsible. We are not liable for losses.</p>
+                </section>
+
+                <section id="contact" class="page-section hidden">
+                    <h2>Contact Us</h2>
+                    <p>Phone: +254790468862 / +211927600861</p>
+                    <p>Email: support@gracesound.com</p>
+                </section>
+
+                <section id="blog" class="page-section hidden">
+                    <h2>Blog</h2>
+                    <p>Latest news and updates will appear here.</p>
+                </section>
+            </main>
+
+            <footer class="footer">
+                <p>Waheed Music Official</p>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal hidden">
+        <div class="modal-content modal-galaxy animate-pop">
+            <span class="modal-close" id="loginClose">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="loginEmail">Email:</label><br />
+                <input type="email" id="loginEmail" required autocomplete="username" /><br />
+                <label for="loginPassword">Password:</label><br />
+                <input type="password" id="loginPassword" required autocomplete="current-password" /><br />
+                <button type="submit" class="animated-btn">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Create Account Modal -->
+    <div id="createAccountModal" class="modal hidden">
+        <div class="modal-content modal-galaxy animate-pop">
+            <span class="modal-close" id="createClose">&times;</span>
+            <h2>Create New Account</h2>
+            <form id="createAccountForm">
+                <label for="newName">Name:</label><br />
+                <input type="text" id="newName" required autocomplete="name" /><br />
+                <label for="newEmail">Email:</label><br />
+                <input type="email" id="newEmail" required autocomplete="email" /><br />
+                <label for="newPassword">Password:</label><br />
+                <input type="password" id="newPassword" required autocomplete="new-password" /><br />
+                <button type="submit" class="animated-btn">Create Account</button>
+            </form>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
